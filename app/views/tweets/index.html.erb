@@ -1,0 +1,9 @@
+<div class="contents row">
+  <% @tweets.each do |tweet| %>
+    <div class="content_post" >
+      <span class="name">
+        <%= tweet.content %>
+      </span>
+    </div>
+  <% end %>
+</div>
