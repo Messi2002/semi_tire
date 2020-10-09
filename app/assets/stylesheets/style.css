@@ -956,7 +956,7 @@ div.contents.row div.content_post .more ul.more_list li a {
 }
 
 div.contents.row div.content_post .more ul.more_list li a:hover {
-  background-color: #57C3E9;
+  background-color:blue;
   color: #fff;
 }
 
