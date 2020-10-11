@@ -14,16 +14,13 @@
       </div>
 
       <div class="field">
-        <%= f.label :パスワード %>
-        <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> 文字以内)</em>
-        <% end %><br />
-        <%= f.password_field :password, autocomplete: "off" %>
+        <%= f.label :パスワード %><br />
+        <%= f.password_field :password, placeholder:"6文字以上の半角英数字", autocomplete: "off" %>
       </div>
 
       <div class="field">
         <%= f.label :確認用パスワード %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+        <%= f.password_field :password_confirmation, placeholder:"同じパスワードを入力して下さい", autocomplete: "off" %>
       </div>
 
       <div class="actions">

@@ -6,4 +6,6 @@ class User < ApplicationRecord
   has_many :tweets
   has_many :comments
   validates :nickname, presence: true, length: { maximum: 6 }
+  validates :password, presence: true, format: { with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i }
+  validates :password_confirmation, presence: true, format: {with: /\A(?=.*?[a-z])(?=.*?[\d])[a-z\d]+\z/i }
 end
